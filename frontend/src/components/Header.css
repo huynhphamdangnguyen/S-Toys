@@ -1,0 +1,19 @@
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.nav-link:hover::after {
+  content: "";
+  opacity: 1;
+  height: 2px;
+  width: 90%;
+  background-color: #a1decf;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
